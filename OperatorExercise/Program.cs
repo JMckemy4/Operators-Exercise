@@ -1,12 +1,12 @@
-﻿namespace OperatorExercise
-{
+﻿namespace OperatorExercise 
+{ 
     internal class Program
     {
 
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
-            int a = 100;
-            int b = 2;
+            int a = 41;
+            int b = 29;
             Console.WriteLine(a + b);
             Console.WriteLine(a - b);
             Console.WriteLine(a * b);
@@ -16,6 +16,9 @@
             Console.WriteLine("Please input a number to be used as the radius.");
             double o = double.Parse(Console.ReadLine());
             Console.WriteLine(Circle.AreaOfCircle(o));
+            {
+                Program.Main(args);
+            }
         }
     }
 }

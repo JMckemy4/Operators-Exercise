@@ -2,8 +2,11 @@
 { 
     internal class Program
     {
-
-       static void Main(string[] args)
+        public static double AreaOfCircle(double radius)
+        {
+            return Math.PI * radius * radius;
+        }
+        static void Main(string[] args)
         {
             int a = 41;
             int b = 29;
@@ -16,9 +19,7 @@
             Console.WriteLine("Please input a number to be used as the radius.");
             double o = double.Parse(Console.ReadLine());
             Console.WriteLine(Circle.AreaOfCircle(o));
-            {
-                Program.Main(args);
-            }
+            
         }
     }
 }
